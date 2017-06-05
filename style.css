@@ -7,7 +7,7 @@ body {
 	background-color: #dddddd;
 }
 
-header {
+body > header {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -18,7 +18,6 @@ header {
 nav, main, aside {
 	box-sizing: border-box;
 	margin-top: 50px;
-	background-color: red;
 	float: left;
 }
 
@@ -34,4 +33,40 @@ main {
 aside {
 	width: 28%;
 	margin-left: 1%;
+}
+
+article {
+	margin-bottom: 10px;
+	padding: 5px;
+	background-color: white;
+	border-radius: 2px;
+	box-shadow: 0 0 1px white;
+}
+
+main article.create {
+
+}
+
+.post header img{
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+
+.post > ul {
+	margin-left: auto;
+}
+
+.post > ul li {
+	display: inline;
+	margin-right: 5px;
+}
+
+.post footer {
+	border-top: 1px solid black;
+}
+
+.post footer li{
+	display: inline;
+	margin-right: 5px;
 }
