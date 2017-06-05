@@ -1,6 +1,10 @@
-body, header, nav, main, aside {
+body, header, nav, main, aside, li, ul, h3, p {
 	margin: 0;
 	padding: 0;
+}
+
+a {
+	text-decoration: none;
 }
 
 body {
@@ -15,6 +19,33 @@ body > header {
 	background-color: #0288d1;
 }
 
+body > header img {
+	width: 37px;
+	height: 37px;
+	float: left;
+	margin-left: 30px;
+}
+
+body > header input {
+	width: 400px;
+	float: left;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+body > header ul {
+	float: right;
+	list-style-type: none;
+}
+
+body > header ul li {
+	display: inline;
+}
+
+body > header ul li:second-child {
+	border-left: 1px solid white;
+}
+
 nav, main, aside {
 	box-sizing: border-box;
 	margin-top: 50px;
@@ -22,7 +53,7 @@ nav, main, aside {
 }
 
 nav {
-	width: 14%;
+	width: 19%;
 	margin-right: 1%;
 }
 
@@ -31,7 +62,7 @@ main {
 }
 
 aside {
-	width: 28%;
+	width: 23%;
 	margin-left: 1%;
 }
 
@@ -41,20 +72,86 @@ article {
 	background-color: white;
 	border-radius: 2px;
 	box-shadow: 0 0 1px white;
+	color: #1144ff;
+}
+
+nav ul{
+	list-style-type: none;
+	padding: 30px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+nav ul li{
+	vertical-align: middle;
+	padding: 5px;
+}
+
+nav img {
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+}
+
+nav h4 {
+	display: inline;
+	margin-left: 5px;
+	font-size: 12px;
+	font-weight: normal;
+	border: 1px solid black;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+nav h3{
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+nav ul li:first-child {
+	margin-bottom: 5px;
+}
+
+nav ul li:hover {
+	background-color: white;
+	box-shadow: 0 0 1px gray;
 }
 
 main article.create {
 
 }
 
-.post header img{
-	float: left;
-	width: 20px;
-	height: 20px;
+.post header {
+	margin-bottom: 15px;
 }
 
+.post header p{
+	color: gray;
+	font-size: 10px;
+}
+
+.floating:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.post header img{
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+.post img {
+	display: block;
+	width: 100%;
+}
 .post > ul {
-	margin-left: auto;
+	margin-top: 15px;
+	float: right;
 }
 
 .post > ul li {
@@ -63,10 +160,15 @@ main article.create {
 }
 
 .post footer {
-	border-top: 1px solid black;
+	border-top: 0.5px solid #0022aa;
 }
 
 .post footer li{
 	display: inline;
 	margin-right: 5px;
+}
+
+aside article img {
+	display: block;
+	width: 100%;
 }
