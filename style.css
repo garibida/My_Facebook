@@ -1,0 +1,37 @@
+body, header, nav, main, aside {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #dddddd;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #0288d1;
+}
+
+nav, main, aside {
+	box-sizing: border-box;
+	margin-top: 50px;
+	background-color: red;
+	float: left;
+}
+
+nav {
+	width: 14%;
+	margin-right: 1%;
+}
+
+main {
+	width: 55%;
+}
+
+aside {
+	width: 28%;
+	margin-left: 1%;
+}
