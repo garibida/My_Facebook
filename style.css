@@ -1,4 +1,4 @@
-body, header, nav, main, aside, li, ul, h3, p {
+body, header, nav, main, aside, li, ul, h3, p, a, img {
 	margin: 0;
 	padding: 0;
 }
@@ -15,93 +15,117 @@ body > header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 40px;
-	background-color: #0288d1;
+	box-sizing: border-box;
+	height: 50px;
+	padding: 10px 100px;
+	background-color: #3f51b5;
+	display:flex;
+    align-items: center;
 }
 
 body > header img {
 	width: 37px;
 	height: 37px;
 	float: left;
-	margin-left: 30px;
 }
 
 body > header input {
-	width: 400px;
+	width: 500px;
 	float: left;
 	margin-left: 10px;
 	border-radius: 5px;
+	padding: 3px;
 }
 
-body > header ul {
+body > header > nav{
 	float: right;
-	list-style-type: none;
+	width: 100%;
 }
 
-body > header ul li {
-	display: inline;
+body > header a{
+	float: right;
+	margin-left: 10px;
+	display:flex;
+    align-items: center;
+    height: 25px;
+    color: white;
+    text-shadow: 0 0 1px white;
 }
 
-body > header ul li:second-child {
-	border-left: 1px solid white;
+body > header a:nth-child(2){
+	padding-left: 15px;
+	border-left: 0.1px solid white;
 }
 
-nav, main, aside {
+body > header a:nth-child(3){
+	margin-right: 10px;
+}
+
+body > header a:nth-last-child(2){
+	margin-right: 10px;
+}
+
+body > header a img{
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+}
+
+body > nav, main, aside {
 	box-sizing: border-box;
-	margin-top: 50px;
+	margin-top: 60px;
 	float: left;
 }
 
-nav {
-	width: 19%;
+body > nav {
+	width: 24%;
 	margin-right: 1%;
+	padding-left: 100px;
 }
 
 main {
-	width: 55%;
+	width: 44%;
 }
 
 aside {
-	width: 23%;
+	width: 30%;
 	margin-left: 1%;
+	padding-right: 100px;
 }
 
 article {
 	margin-bottom: 10px;
-	padding: 5px;
+	padding: 10px;
 	background-color: white;
 	border-radius: 2px;
 	box-shadow: 0 0 1px white;
 	color: #1144ff;
 }
 
-nav ul{
+.buttons {
 	list-style-type: none;
-	padding: 30px;
 	text-align: left;
 	vertical-align: middle;
 }
 
-nav ul li{
-	vertical-align: middle;
-	padding: 5px;
+.buttons li{
+	display:flex;
+    align-items: center;
+	padding: 2px;
 }
 
-nav img {
+.buttons img {
 	width: 30px;
 	height: 30px;
-	margin-right: 5px;
+	margin: 0;
 }
 
-nav h4 {
+.buttons h4 {
 	display: inline;
 	margin-left: 5px;
 	font-size: 12px;
 	font-weight: normal;
-	border: 1px solid black;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	margin: 0 0 0 5px;
 }
 
 nav h3{
@@ -114,7 +138,7 @@ nav ul li:first-child {
 	margin-bottom: 5px;
 }
 
-nav ul li:hover {
+.buttons li:hover {
 	background-color: white;
 	box-shadow: 0 0 1px gray;
 }
@@ -168,7 +192,52 @@ main article.create {
 	margin-right: 5px;
 }
 
-aside article img {
+aside article.ads img {
 	display: block;
 	width: 100%;
+}
+
+aside article.ads h3{
+	color: gray;
+	text-align: left;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+aside article.events ul{
+	padding: 0;
+	color: gray;
+}
+
+.events span {
+	color: blue;
+}
+
+.comments {
+	height: 400px;
+	overflow-y: auto;
+	padding: 0;
+}
+
+.comments ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.comments ul li {
+	display:flex;
+    align-items: center;
+	padding: 1px 10px 1px 10px;
+	border-top: 0.3px solid black;
+}
+
+.comments ul li:hover {
+	background-color: #eeeeff;
+}
+
+.comments img{
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
 }
