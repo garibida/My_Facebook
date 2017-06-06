@@ -30,10 +30,17 @@ body > header img {
 }
 
 body > header input {
+<<<<<<< HEAD
 	width: 800px;
 	float: left;
 	margin-left: 10px;
 	border-radius: 2px;
+=======
+	width: 500px;
+	float: left;
+	margin-left: 10px;
+	border-radius: 5px;
+>>>>>>> a07395ca35b6eb65f5b031918f339b758e96333f
 	padding: 3px;
 }
 
@@ -210,6 +217,7 @@ aside article.ads h3{
 
 aside article.events ul{
 	padding: 0;
+	color: gray;
 }
 
 .events span {
