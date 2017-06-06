@@ -1,4 +1,4 @@
-body, header, nav, main, aside, li, ul, h3, p, a, img {
+body, header, nav, main, aside, li, ul, h3, p, a, img, div {
 	margin: 0;
 	padding: 0;
 }
@@ -17,8 +17,12 @@ body > header {
 	width: 100%;
 	box-sizing: border-box;
 	height: 50px;
-	padding: 10px 100px;
+	padding: 10px 0px;
 	background-color: #3f51b5;
+}
+
+body > header > div {
+	height: 100%;
 	display:flex;
     align-items: center;
 }
@@ -37,7 +41,7 @@ body > header input {
 	padding: 3px;
 }
 
-body > header > nav{
+body > header > div > nav{
 	float: right;
 	width: 100%;
 }
@@ -71,26 +75,31 @@ body > header a img{
 	margin-right: 5px;
 }
 
-body > nav, main, aside {
+body > div > nav, main, aside {
 	box-sizing: border-box;
 	margin-top: 60px;
 	float: left;
+	border: 1px solid black;
 }
 
-body > nav {
-	width: 24%;
-	margin-right: 1%;
-	padding-left: 100px;
+div.pageWidth {
+	box-sizing: content-box;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+div > nav {
+	width: 200px;
+	margin-right: 10px;
 }
 
 main {
-	width: 44%;
+	width: 490px;
 }
 
 aside {
-	width: 30%;
-	margin-left: 1%;
-	padding-right: 100px;
+	width: 290px;
+	margin-left: 10px;
 }
 
 article {
