@@ -210,6 +210,7 @@ aside article.ads h3{
 
 aside article.events ul{
 	padding: 0;
+	color: gray;
 }
 
 .events span {
