@@ -79,7 +79,6 @@ body > div > nav, main, aside {
 	box-sizing: border-box;
 	margin-top: 60px;
 	float: left;
-	border: 1px solid black;
 }
 
 div.pageWidth {
