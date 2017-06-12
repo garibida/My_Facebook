@@ -1,4 +1,4 @@
-body, header, nav, main, aside, li, ul, h3, p, a, img, div {
+body, header, nav, main, aside, li, ul, h3, h4, p, a, img, div {
 	margin: 0;
 	padding: 0;
 }
@@ -254,4 +254,131 @@ aside article.events ul{
 	width: 50px;
 	height: 50px;
 	margin-right: 10px;
+}
+
+.create{
+	padding: 0;
+}
+
+.create header,.create footer {
+	padding: 10px;
+	background-color: #eeeeee;
+}
+
+.create header{
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+	border-bottom: 0.1px 0.3px solid #dddddd;
+}
+
+.create header ul{
+	list-style-type: none;
+}
+
+.create header ul li{
+	display: inline;
+}
+
+.create header a{
+	display: inline-block;
+	padding: 2px 10px;
+	color: #202090;
+}
+
+.create header ul li:nth-child(1){
+	border-right: 1px solid white;
+}
+
+.create footer{
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-top: 0.3px solid #dddddd;
+}
+
+.create > div {
+	padding: 10px;
+}
+
+.create_content {
+	border-bottom: 0.3px solid #dddddd;
+	padding: 5px;
+}
+
+.create_content img {
+	float: left;
+	width: 10%;
+	height: auto;
+	margin: 5px;
+}
+
+.create_content textarea {
+	float: left;
+	width: 85%;
+	height: 80px;
+	margin: 5px;
+	overflow-y: visible;
+	resize: none;
+	border: 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.create_buttons {
+	padding: 2px;	
+}
+
+.create_buttons a {
+	background-color: #f7f7f7;
+	border-radius: 10px;
+	padding: 2px;
+	float: left;
+	box-sizing: border-box;
+	width: 45%;
+	margin: 5px 2.5% 5px 2.5%;
+	display:flex;
+    align-items: center;
+    color: black;
+}
+
+.create_buttons a:hover {
+	background-color: #dfe3ee;
+}
+
+.create_buttons img {
+	display: inline-block;
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+}
+
+.create_buttons h4 {
+	display: inline-block;
+	font-size: 14px;
+	margin: 0;
+}
+
+.create footer a {
+	display: block;
+	text-align: center;
+	border-radius: 2px;
+	float: left;
+	width: 80px;
+	padding: 2px;
+	box-shadow: 0 0 1px white;
+	margin: 0 10px;
+}
+
+.create footer a:nth-child(1){
+	border: 1px solid rgb(0,0,0,0.2);
+}
+
+.create footer a:nth-child(2){
+	background-color: #3b5998;
+	color: white;
+}
+
+.create footer a:nth-child(3){
+	background-color: blue;
+	color: white;
+	float: right;
 }
